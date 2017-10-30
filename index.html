@@ -2,59 +2,43 @@
 <html>
 
 <head>
-  <title>JS Calculator</title>
-	<script src="main.js" language="javascript" type="text/javascript"></script>
-	<script src="script.js" language="javascript" type="text/javascript"></script>
-	<link href="style.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="box">
-<div class="display"><input type="text" readonly size="18" id="d"></div>
-<div class="keys">
-    <p><input type="button" class="button gray"
+  <div class="wrapper">
+    <section id="firstSection">
+      <button class="clearbutton" type="button" name="C">C</button>
+      <p></p>
+    </section>
+    <section>
+      <button class="numbers" type="button" name="7">7</button>
+      <button class="numbers" type="button" name="8">8</button>
+      <button class="numbers" type="button" name="9">9</button>
+      <button class="operators" type="button" name="Divide">/</button>
+    </section>
+    <section>
+      <button class="numbers" type="button" name="4">4</button>
+      <button class="numbers" type="button" name="5">5</button>
+      <button class="numbers" type="button" name="6">6</button>
+      <button class="operators" type="button" name="Multiply">*</button>
+    </section>
+    <section>
+      <button class="numbers" type="button" name="1">1</button>
+      <button class="numbers" type="button" name="2">2</button>
+      <button class="numbers" type="button" name="3">3</button>
+      <button class="operators" type="button" name="Minus">-</button>
+    </section>
+    <section>
+      <button class="numbers" type="button" name="0">0</button>
+      <button class="numbers" type="button" name="Decimal">.</button>
+      <button class="equals" type="button" name="Equals">=</button>
+      <button class="operators" type="button" name="Plus">+</button>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
 
-          value="/" onclick='v("/")'></p>
-          <p><input type="button" class="button black"
-
-          value="7" onclick='v("7")'><input type="button"
-
-          class="button black" value="8" onclick='v("8")'>
-          <input type="button" class="button black" value="9"
-
-          onclick='v("9")'><input type="button"
-
-          class="button pink" value="*" onclick='v("*")'></p>
-          <p><input type="button" class="button black"
-
-          value="4" onclick='v("4")'><input type="button"
-
-          class="button black" value="5" onclick='v("5")'>
-          <input type="button" class="button black" value="6"
-
-          onclick='v("6")'><input type="button"
-
-          class="button pink" value="-" onclick='v("-")'></p>
-          <p><input type="button" class="button black"
-
-          value="1" onclick='v("1")'><input type="button"
-
-          class="button black" value="2" onclick='v("2")'>
-          <input type="button" class="button black" value="3"
-
-          onclick='v("3")'><input type="button"
-
-          class="button pink" value="+" onclick='v("+")'></p>
-          <p><input type="button" class="button black"
-
-          value="0" onclick='v("0")'><input type="button"
-
-          class="button black" value="." onclick='v(".")'>
-          <input type="button" class="button black" value="C"
-
-          onclick='c("")'><input type="button"
-
-          class="button orange" value="=" onclick='e()'></p>
-      </div>
-      </div>
-    </body>
-    </html>
+</html>
